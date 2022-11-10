@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1b1e20;
+            background-image: url("images/black_concrete-seamless_web_texture.jpg");
+            background-repeat: repeat;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #2a2e32;
+            padding: 20px 10px;
+            box-shadow: 10px 10px black;
+            border: 1px solid gray;
+        }
+
+        .header a {
+            float: left;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            display: flex;
+            text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            font-size: 25px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: #3daee9;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+
+        .card {
+            text-align: left;
+            background-color: #2a2e32;
+            padding: 1rem;
+            box-shadow: 10px 10px black;
+            border: 1px solid gray;
+            display: inline-block;
+        }
+
+        .cards {
+            text-align: center;
+            margin-top: 1rem;
+            max-width: 1200px;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        #footercontainer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #footer {
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            background-color: #2a2e32;
+            width: auto;
+            margin: 1rem;
+            padding: 5px;
+            box-shadow: 10px 10px black;
+            border: 1px solid gray;
+        }
+    </style>
+    <title>laineantti</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="https://github.com/laineantti" class="logo">
+            <img src="images/ani-construction.gif"/><pre> @laineantti</pre>
+        </a>
+        <!--div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div-->
+    </div>
+    <div class="cards" style="min-width: 100%">
+        <div class="card">
+            <img style="width: 200px; height: 200px" src="images/logo.gif">
+            <h1>Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non quam eget eros sagittis consectetur eu at
+                libero. Duis massa nisl, placerat id pellentesque eu, interdum a lacus. Quisque dictum metus metus,
+                tempus tincidunt est mattis sit amet. Quisque congue venenatis rutrum. Praesent pulvinar bibendum
+                auctor. Fusce sed porta mi, sit amet pulvinar ipsum. Cras gravida ullamcorper elit, et volutpat augue
+                scelerisque id. Phasellus id risus orci. Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae; Duis pellentesque, urna nec fermentum feugiat, diam quam tincidunt massa, eget aliquam
+                sem metus sit amet dui. Vivamus ut faucibus urna. In nisi sem, rutrum ac iaculis congue, egestas non
+                eros. Vivamus sed ante eu risus dapibus sagittis. Proin nisi nibh, placerat sit amet ultricies id,
+                elementum id odio.</p>
+            <p>Pellentesque viverra dignissim odio, sed maximus quam commodo vitae. Proin id enim condimentum, dignissim
+                est commodo, convallis mi. Suspendisse dictum blandit sem, in vehicula quam dignissim sed. Proin sit
+                amet eleifend lorem, non convallis metus. Maecenas eu odio est. Vivamus quis nisl feugiat, feugiat
+                sapien nec, commodo massa. Donec eleifend ac dui eu auctor. Nunc sollicitudin dapibus felis, eu porta
+                nunc pulvinar at. Sed convallis at elit id convallis. Sed in ex dolor. Vivamus sed nisi luctus, tempus
+                mi in, mollis orci. Ut aliquam semper elit, in scelerisque nunc finibus in. Sed non lorem consectetur
+                est aliquam vehicula ac sit amet ex. Vestibulum nec dolor a lacus gravida gravida. Donec pellentesque
+                nibh sed ex interdum blandit. Sed vel lobortis odio, nec malesuada massa.</p>
+            <p>Proin ut magna vitae neque pellentesque faucibus. Nunc ullamcorper aliquam lobortis. Vivamus aliquet,
+                magna non tincidunt faucibus, diam neque vestibulum augue, ac semper risus lectus sit amet orci. Cras
+                fermentum dolor dictum eros porttitor eleifend. Quisque sodales posuere scelerisque. Ut urna lectus,
+                lacinia at luctus quis, malesuada eget mauris. Quisque cursus lacus vitae scelerisque placerat. Sed
+                fringilla volutpat fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae; Donec egestas ipsum in orci pulvinar condimentum.</p>
+        </div>
+        <div class="card">
+            <p>Nulla vestibulum posuere arcu eu gravida. Curabitur hendrerit purus sit amet eros semper, nec consequat
+                odio blandit. Praesent vestibulum auctor lectus in tempor. Nunc scelerisque odio nec nunc mattis
+                fermentum. Ut placerat mi vehicula suscipit mollis. Aenean nec semper arcu. Mauris commodo, urna nec
+                iaculis malesuada, massa lacus finibus libero, sed sagittis massa sem at eros. Pellentesque ut elementum
+                nisl, vel suscipit elit. Quisque consectetur fermentum eros et viverra. Nam id nibh tortor. Pellentesque
+                et leo et ipsum egestas porttitor. Donec velit odio, imperdiet quis hendrerit sit amet, ornare in ex.
+                Pellentesque pharetra sapien sed mollis pretium.</p>
+            <p>Curabitur quis pellentesque dui. Curabitur et libero risus. Aenean eget ligula et nunc pretium euismod.
+                Vestibulum vulputate vitae ante nec suscipit. Suspendisse feugiat suscipit dolor eget ultricies. Aenean
+                in hendrerit nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget magna leo. Nam
+                aliquam felis non felis dignissim, et hendrerit lectus interdum. Aliquam fringilla elit sed tincidunt
+                bibendum. Nunc nec tincidunt velit, ut ultricies lorem. In ullamcorper mi ac sem pharetra aliquet. Ut at
+                orci placerat, commodo nisi eu, iaculis ipsum. Sed mattis convallis eros, id efficitur turpis imperdiet
+                eu. Mauris convallis nibh quis est blandit aliquam. Morbi non eros ac lacus vestibulum finibus facilisis
+                non enim.</p>
+        </div>
+        <!--div class="card">card</div-->
+    </div>
+
+    <div id="footercontainer">
+        <p id="footer"></p>
+    </div>
+    <script type="text/javascript">
+        let year = new Date().getFullYear();
+        document.getElementById("footer").innerHTML = '© ' + year + ' <a href="https://laineantti.github.io">laineantti.github.io</a>';
+    </script>
+</body>
+
+</html>
